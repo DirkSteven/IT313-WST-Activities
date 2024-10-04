@@ -10,7 +10,7 @@ html, body {
 
 body {
   background-image: url("wp.jpg");
-  background-size: cover;
+  background-size: cover; 
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,9 +23,11 @@ span {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh; /* Make it fill the viewport height */
-  width: 100%; /* Ensure full width */
-  overflow: visible; /* Allow growth of boxes */
+  flex-wrap: wrap;
+
+  height: 100vh; 
+  width: 100%; 
+  overflow: visible; 
 }
 
 .box {
@@ -37,9 +39,9 @@ span {
   padding: 2em;
 
   border-radius: 2em;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Backlight effect */
-  animation: float 1.5s ease-in-out forwards; /* Floating animation once */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+  animation: float 1.5s ease-in-out forwards; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .box-content {
@@ -48,7 +50,6 @@ span {
   color: white;
 }
 
-/* Floating animation */
 @keyframes float {
   0% {
       transform: translateY(0);
@@ -69,10 +70,10 @@ span {
 }
 
 
-/* Hover effect */
+
 .box:hover {
-  transform: scale(1.5); /* Enlarge the box */
-  box-shadow: 0 0 25px rgba(255, 255, 255, 1); /* Increase backlight effect on hover */
+  transform: scale(1.5); 
+  box-shadow: 0 0 25px rgba(255, 255, 255, 1); 
 }
 
 .icon {
